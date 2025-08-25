@@ -1,0 +1,1 @@
+FLAG{flask_ssti_for_the_win}
