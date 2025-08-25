@@ -135,6 +135,9 @@ a {{ color: #7c8aff; text-decoration: none; }}
 
     return render_template_string(template, flag=flag, session=session)
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
